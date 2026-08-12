@@ -31,7 +31,7 @@ export default function Page() {
                         <div className="heroServices__background ">
                             <img
                                 className="heroServices__img "
-                                src="/image/_DSC5865.jpg"
+                                src="/image/DSC5866.jpg"
                                 alt=""
                             />
                         </div>
