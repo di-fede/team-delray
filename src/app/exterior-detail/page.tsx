@@ -8,7 +8,7 @@ export default function Page() {
         <div className="book">
             <HeroService
                 title="Exterior Detail"
-                backImage="/image/DSC03597.jpg"
+                backImage="/image/DSC03598.jpg"
                 calender="https://calendly.com/difede462/interior"
             />
             {/* 

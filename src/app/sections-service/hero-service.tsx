@@ -49,9 +49,9 @@ export default function HeroService({
                         <div className={`heroServices__heading ${ant}`}>
                             <span>{title}</span>
                         </div>
-                        <div className={`heroServices__subHeading ${play}`}>
-                            {/* <span>{subtitle}</span> */}
-                        </div>
+                        <div
+                            className={`heroServices__subHeading ${play}`}
+                        ></div>
                     </div>
                     <div className="book__calender-section">
                         <div className="book__calender-container">
