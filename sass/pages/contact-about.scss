@@ -1,0 +1,129 @@
+.about {
+    height: 89rem;
+    width: 75rem;
+
+    @media screen and (max-width: 800px) {
+        width: 60rem;
+    }
+    @include respond(phone) {
+        width: 40rem;
+    }
+
+    &__section {
+        grid-column: 3/11;
+        grid-row: 4/5;
+        padding: 8rem;
+
+        @media screen and (max-width: 930px) {
+            grid-column: 2/12;
+        }
+        @media screen and (max-width: 730px) {
+            grid-column: 1/-1;
+        }
+        @media screen and (max-width: 630px) {
+            padding: 8rem 0 0 0;
+        }
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 8rem;
+        z-index: 3;
+        backdrop-filter: blur(8px);
+        border-radius: 8px;
+        background-color: rgba($color: #333a4b, $alpha: 0.5);
+
+        @include respond(tab-land) {
+            flex-direction: column;
+        }
+        @media screen and (max-width: 500px) {
+            padding: 8rem 2rem 2rem 2rem;
+        }
+    }
+
+    &__content {
+        font-size: 2rem;
+        line-height: 1.6;
+        letter-spacing: 1px;
+        font-weight: 400;
+
+        &-container {
+            width: 78%;
+            text-align: center;
+        }
+    }
+}
+///////////  Contact ///////////////
+
+.contactForm {
+    &__section {
+        grid-column: 3/11;
+        grid-row: 4/5;
+        padding: 8rem;
+
+        @media screen and (max-width: 700px) {
+            width: 100vw;
+        }
+
+        &-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 8rem;
+            z-index: 3;
+            backdrop-filter: blur(8px);
+            border-radius: 8px;
+            background-color: rgba(51, 58, 75, 0.5);
+
+            @media screen and (max-width: 650px) {
+                padding: 2rem;
+            }
+            @media screen and (max-width: 500px) {
+                padding-top: 8rem;
+            }
+        }
+    }
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    ::placeholder {
+        color: #cdcdcd;
+        caret-color: #fff;
+        padding-left: 5px;
+    }
+
+    input {
+        height: 3rem;
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+    }
+    textarea {
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: 4rem;
+    }
+
+    &__button {
+        width: 12rem;
+        height: 4rem;
+        border-radius: 1000px;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+            background-color: rgba($color: #fff, $alpha: 0.2);
+        }
+    }
+}

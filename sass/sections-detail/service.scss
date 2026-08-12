@@ -1,0 +1,103 @@
+.heroServices {
+    width: 100%;
+    height: 100vh;
+    &__container-outer {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__socials-bar {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        width: 100%;
+        height: 3.5rem;
+        background-color: #000;
+    }
+    &__grid {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 3.5rem repeat(3, 1fr);
+        //   background-image: url("/image/kirhome.jpg");
+        background-size: cover;
+        background-position: 50% 0px;
+        background-repeat: no-repeat;
+        color: $color-white;
+    }
+    &__background {
+        grid-row: 2/-1;
+        grid-column: 1/-1;
+        width: 102%;
+    }
+
+    &__img {
+        width: 100%;
+        height: 105%;
+        object-fit: cover;
+    }
+
+    /////////  TEXT BLOCK  /////////
+    &__text-block {
+        grid-column: 5/9;
+        grid-row: 3/4;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        transform: translateY(12rem);
+    }
+    &__intro {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        align-self: end;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        width: 70%;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        text-align: center;
+        &-text {
+            margin: 0 10px;
+            text-align: center;
+        }
+    }
+    &__heading {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 7rem;
+        font-weight: 600;
+
+        text-transform: uppercase;
+    }
+    &__subHeading {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        font-size: 1.6rem;
+    }
+    ///////////////////////////////
+
+    &__nav-section {
+        grid-column: 4/10;
+        grid-row: 2/3;
+        width: 100%;
+        display: flex;
+        margin-top: 10rem;
+        z-index: 2;
+    }
+
+    &__nav-container {
+        display: grid;
+        grid-template-columns: 1fr 10rem 1fr;
+        width: 100%;
+        height: max-content;
+    }
+}

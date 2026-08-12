@@ -1,0 +1,117 @@
+.footer {
+    width: 100%;
+    background-color: $color-primary;
+    display: flex;
+    justify-content: center;
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 50rem 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 8 rem;
+        justify-items: center;
+
+        @media screen and (max-width: 700px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+    &__column {
+        padding: 4rem;
+        text-align: center;
+    }
+
+    &__column-heading {
+        font-size: 2rem;
+        color: $color-white;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+
+    &__list {
+        list-style: none;
+        font-size: 1.4rem;
+        color: $color-darktext;
+        & li {
+            padding: 0.6rem 0;
+        }
+    }
+
+    &__subscribe-text {
+        color: $color-darktext;
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+    }
+
+    &__subscribe-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        border: 1px solid $color-darktext;
+        width: 28rem;
+        & input {
+            width: 18rem;
+            background-color: $color-primary;
+            border: none;
+            color: $color-white;
+            caret-color: white;
+            &:focus {
+                border: none;
+            }
+        }
+        & button {
+            display: flex;
+            align-items: center;
+            background-color: $color-primary;
+            border: none;
+            color: $color-white;
+            &::before {
+                content: " ";
+                height: 20px;
+                width: 1px;
+                display: inline-block;
+                background-color: $color-darktext;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &__column-c {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (max-width: 700px) {
+            grid-column: 1/3;
+            grid-row: 2/3;
+        }
+    }
+    &__column-r {
+        @media screen and (max-width: 700px) {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+    }
+    &__column-l {
+    }
+}
+
+.calendlyReact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90rem;
+}
+.inline-widget {
+    min-width: 32rem;
+    width: 70rem;
+    height: 80rem;
+    scrollbar-width: none;
+}
+.googCalender {
+    height: 70rem;
+    color: white;
+    &__container {
+        height: 70rem;
+    }
+}

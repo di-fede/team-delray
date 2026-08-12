@@ -1,0 +1,158 @@
+.heroHome {
+    width: 100%;
+    height: 50vh;
+    &__container-outer {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__socials-bar {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 100%;
+        height: 30px;
+        background-color: #000;
+    }
+
+    &__socials-container {
+        display: flex;
+        width: 20rem;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__grid {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 30px repeat(3, 1fr);
+        //   background-image: url("/image/kirhome.jpg");
+        background-size: cover;
+        background-position: 50% 0px;
+        background-repeat: no-repeat;
+        color: $color-white;
+        position: relative;
+    }
+    &__background {
+        grid-row: 2/-1;
+        grid-column: 1/-1;
+        width: 102%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__img {
+        width: 100%;
+        height: 105%;
+        object-fit: cover;
+        filter: brightness(0.5);
+        position: absolute;
+        left: 0;
+        top: -80px;
+    }
+
+    /////////  TEXT BLOCK  /////////
+    &__text-block {
+        grid-column: 4/10;
+        grid-row: 3/4;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        z-index: 4;
+        // transform: translateY(12rem);
+    }
+    &__intro {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        align-self: end;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        width: 70%;
+        min-width: 15rem;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        &-text {
+            margin: 0 10px;
+        }
+    }
+    &__heading {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 7rem;
+        font-weight: 600;
+
+        text-transform: uppercase;
+
+        @include respond(phone) {
+            font-size: 5rem;
+        }
+    }
+    &__subHeading {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        font-size: 1.6rem;
+    }
+    ///////////////////////////////
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+    justify-content: space-around;
+    text-transform: uppercase;
+    @media screen and (max-width: 700px) {
+        display: none;
+    }
+
+    &-left {
+        grid-column: 1/2;
+    }
+    &-right {
+        grid-column: 3/4;
+    }
+}
+.nav__section {
+    grid-column: 4/10;
+    grid-row: 2/3;
+    width: 100%;
+    display: flex;
+    z-index: 2;
+    align-self: center;
+
+    @media screen and (max-width: 800px) {
+        grid-column: 2/12;
+    }
+}
+
+.nav__container {
+    display: grid;
+    grid-template-columns: 1fr 20rem 1fr;
+    width: 100%;
+    height: max-content;
+}
+.nav__logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 700px) {
+        grid-column: 2/3;
+    }
+}
+.nav__logo {
+    width: 15rem;
+}
