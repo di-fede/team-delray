@@ -20,12 +20,10 @@ const ant = antonio.className;
 
 export default function HeroService({
     title,
-    subtitle,
     backImage,
     calender,
 }: {
     title: string;
-    subtitle: string;
     backImage: string;
     calender: string;
 }) {
@@ -52,7 +50,7 @@ export default function HeroService({
                             <span>{title}</span>
                         </div>
                         <div className={`heroServices__subHeading ${play}`}>
-                            <span>{subtitle}</span>
+                            {/* <span>{subtitle}</span> */}
                         </div>
                     </div>
                     <div className="book__calender-section">
