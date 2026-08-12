@@ -124,7 +124,7 @@ export default function ServicesServices() {
                     <div className="services__background">
                         <img
                             className="services__img"
-                            src="/image/DSC03598.jpg"
+                            src="/image/DSC03599.jpg"
                             alt=""
                         />
                     </div>
